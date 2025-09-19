@@ -110,11 +110,10 @@ export default function App() {
       setMessages([{ sender: "System", message: "You left the chat." }]);
       setPartner(null);
       setRoom(null);
-      // rejoin only this user
-      // socketRef.current.emit("joinQueue", { username, university });
-      // setStatus("waiting");
+      setStatus("disconnected"); // new status
     }
   };
+
 
   // Next: mutual skip — ask server to end the room for everyone, server will requeue all members
   const nextChat = () => {
@@ -344,6 +343,21 @@ export default function App() {
           {status === "waiting" && (
             <div style={{ textAlign: "center", padding: 12, fontWeight: 700, color: "#000" }}>
               Establishing a connection...
+            </div>
+          )}
+
+          {status === "disconnected" && (
+            <div style={{ textAlign: "center", marginTop: 12 }}>
+              <button
+                style={styles.buttonPrimary}
+                onClick={() => {
+                  socketRef.current.emit("joinQueue", { username, university });
+                  setMessages([]);
+                  setStatus("waiting");
+                }}
+              >
+                Reconnect
+              </button>
             </div>
           )}
 
