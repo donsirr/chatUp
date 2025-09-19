@@ -181,11 +181,12 @@ export default function App() {
       flexShrink: 0, // keep fixed
     },
     body: {
-      flex: 1,                  // take remaining height
+      padding: 10,
       display: "flex",
       flexDirection: "column",
-      padding: 10,
-      overflow: "hidden",
+      justifyContent: "space-between", // ensures chatWindow + inputRow are separated
+      height: "100%",                  // let it span full parent height
+      boxSizing: "border-box",
     },
     formControl: {
       display: "block",
@@ -209,15 +210,14 @@ export default function App() {
       boxSizing: "border-box",
     },
     chatWindow: {
-      flex: 1,                  // grow vertically with parent
-      overflowY: "auto",
+      height: "60vh",        // much taller than 260px, fills most of the box
+      overflowY: "auto",     // scrollbar always available when overflowing
       background: "#fff",
       border: "3px solid #000",
       padding: 8,
       fontSize: 13,
       lineHeight: "1.2",
       color: "#000",
-      minHeight: "200px",       // safety minimum
     },
     systemMessage: {
       color: "#b00000",
