@@ -19,7 +19,7 @@ export default function App() {
   const typingTimerRef = useRef(null);
 
   useEffect(() => {
-    socketRef.current = io("http://localhost:4000", { transports: ["websocket"] });
+    socketRef.current = io("https://chat-up-sage.vercel.app:4000", { transports: ["websocket"] });
     const s = socketRef.current;
 
     s.on("connect", () => console.log("socket connected ->", s.id));
@@ -210,8 +210,8 @@ export default function App() {
       boxSizing: "border-box",
     },
     chatWindow: {
-      height: "60vh",        // much taller than 260px, fills most of the box
-      overflowY: "auto",     // scrollbar always available when overflowing
+      height: "60vh",
+      overflowY: "auto",
       background: "#fff",
       border: "3px solid #000",
       padding: 8,

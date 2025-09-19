@@ -10,7 +10,7 @@ app.get("/", (req, res) => res.send("Backend is running!"));
 
 const server = http.createServer(app);
 const io = new Server(server, {
-    cors: { origin: "http://localhost:5173", methods: ["GET", "POST"] },
+    cors: { origin: "https://chat-up-sage.vercel.app/", methods: ["GET", "POST"] },
 });
 
 // Global waiting queue
@@ -169,4 +169,4 @@ io.on("connection", (socket) => {
     });
 });
 
-server.listen(4000, () => console.log("Server running on port 4000"));
+server.listen(4000, "0.0.0.0", () => console.log("Server running on port 4000"));
