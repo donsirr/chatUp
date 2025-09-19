@@ -25,6 +25,16 @@ This project consists of:
 
 ---
 
+## Screenshots
+
+### Landing Page  
+![Landing Page](docs/screenshots/landing-page.jpeg)
+
+### Chat Window  
+![Chat Window](docs/screenshots/chat-window.jpeg)
+
+---
+
 ## Terms & Conditions
 By using **chatUp**, you agree to:
 - Communicate respectfully and responsibly.  
