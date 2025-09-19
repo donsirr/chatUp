@@ -41,12 +41,12 @@ export default function LandingPage({ onAgree }) {
             color: "#000",
           }}
         >
-          chatUp
+          chatUp!
         </h1>
 
         {/* About */}
         <p style={{ fontSize: 14, color: "#111", marginBottom: 20, lineHeight: 1.5 }}>
-          <strong>chatUp</strong> is an anonymous chat platform built for
+          <strong>chatUp!</strong> is an anonymous chat platform built for
           university students. Connect with peers from other institutions,
           collaborate on studies, and share ideas in a safe, simple, and private
           environment.
@@ -65,9 +65,15 @@ export default function LandingPage({ onAgree }) {
             Terms & Conditions
           </h2>
           <p style={{ marginBottom: 16 }}>
-            By accessing chatUp, you agree to behave respectfully, avoid
-            harassment, and comply with applicable university and legal
-            guidelines. Misuse may result in suspension or removal.
+            • By using chatUp, you agree to communicate respectfully and responsibly.
+            <br></br>
+            • Harassment, hate speech, threats, spamming, sexual content, and sharing of illegal or inappropriate material are strictly prohibited.
+            <br></br>
+            • Do not share personal or sensitive information. chatUp is designed for anonymity and your safety.
+            <br></br>
+            • Violations may result in suspension, permanent ban, or reporting to relevant university or legal authorities.
+            <br></br>
+            • You are solely responsible for the content you post and your conduct while using the platform.
           </p>
 
           <h2
@@ -81,9 +87,15 @@ export default function LandingPage({ onAgree }) {
             Disclaimer of Liability
           </h2>
           <p>
-            chatUp is provided "as-is" without warranties of any kind. We are
-            not responsible for the actions or consequences arising from user
-            interactions. Always exercise caution when communicating online.
+            • chatUp is provided “as is” with no guarantees of uninterrupted access, accuracy, or security.
+            <br></br>
+            • The platform does not moderate conversations in real time. Users are responsible for their own interactions.
+            <br></br>
+            • We do not verify the identity of participants and cannot guarantee the authenticity of any information shared.
+            <br></br>
+            • chatUp, its developers, assume no liability for damages, disputes, or consequences arising from use of the service.
+            <br></br>
+            • Always exercise caution when interacting with others online. If you feel unsafe, disconnect immediately.
           </p>
         </div>
 
