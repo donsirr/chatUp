@@ -29,7 +29,7 @@ This project consists of:
 By using **chatUp**, you agree to:
 - Communicate respectfully and responsibly.  
 - Avoid harassment, hate speech, threats, spamming, sexual content, or illegal material.  
-- Never share personal or sensitive information (e.g., addresses, phone numbers, student IDs, financial details).  
+- Never share personal or sensitive information.  
 - Accept that violations may result in suspension, permanent ban, or reporting to relevant authorities.  
 - Take full responsibility for the content you share and your conduct.
 
@@ -40,4 +40,4 @@ By using **chatUp**, you agree to:
 - Conversations are not moderated in real-time; users are solely responsible for their interactions.  
 - The platform does not verify participant identities and cannot guarantee the accuracy of shared information.  
 - Developers and associated institutions assume no liability for damages, disputes, or consequences arising from use.  
-- Use the platform with caution. If you feel unsafe, disconnect immediately.  
+- Use the platform with caution. If you feel unsafe, disconnect immediately.
