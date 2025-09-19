@@ -19,7 +19,7 @@ export default function App() {
   const typingTimerRef = useRef(null);
 
   useEffect(() => {
-    socketRef.current = io("https://chat-up-sage.vercel.app:4000", { transports: ["websocket"] });
+    socketRef.current = io("https://chatup-rzn0.onrender.com", { transports: ["websocket"] });
     const s = socketRef.current;
 
     s.on("connect", () => console.log("socket connected ->", s.id));

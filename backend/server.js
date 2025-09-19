@@ -10,7 +10,7 @@ app.get("/", (req, res) => res.send("Backend is running!"));
 
 const server = http.createServer(app);
 const io = new Server(server, {
-    cors: { origin: "https://chat-up-sage.vercel.app/", methods: ["GET", "POST"] },
+    cors: { origin: "*", methods: ["GET", "POST"] },
 });
 
 // Global waiting queue
