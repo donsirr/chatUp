@@ -210,7 +210,7 @@ export default function App() {
       boxSizing: "border-box",
     },
     chatWindow: {
-      height: "56vh",
+      height: "60vh",
       overflowY: "auto",
       background: "#fff",
       border: "3px solid #000",
